@@ -1,0 +1,514 @@
+:root {
+    --red: red;
+    --dark: #011627;
+    --yellow: #f0c808;
+    --light: #f6f6f6;
+    --blue1: #bfcde0;
+    --yellowL: #e5bf07;
+    --redL: #c90f0d;
+    --blue: #6cabff;
+    --darkblue: #3174d0;
+    --fFamily: 'Poppins', sans-serif;
+    --darkshadowsm: 4px 4px 15px rgba(211, 211, 211, 0.158);
+    --darkshadowlg: 2px 2px 10px rgba(211, 211, 211, 0.158);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--fFamily);
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    overflow-x: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+body a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+body ul {
+    list-style-type: none;
+}
+
+.section {
+    width: 100%;
+    margin-left: 12vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* illus starts */
+
+.illus {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 250px;
+
+}
+
+
+/* illus ends */
+
+/* navbar css starts  */
+.navbar {
+    position: fixed;
+    width: 10vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--darkshadowsm);
+
+}
+
+.theme2 {
+    display: none;
+}
+
+.navbar .logo {
+    position: absolute;
+    top: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .logo img {
+    width: 50px;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.09);
+}
+
+.navbar .navtheme {
+    position: absolute;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+
+.navbar .navtheme:hover {
+    transform: scale(1.1);
+    color: var(--yellow);
+}
+
+.navbar .navlinks ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 17px;
+}
+
+.navbar .navlinks li {
+    padding: 20px;
+}
+
+.navbar .navlinks .navlink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navlinks .navlink:hover {
+    color: var(--yellow);
+}
+
+.navbar .navlinks .navlink .material-icons {
+    font-size: 36px;
+}
+
+.navbar .navlinks .navlink .navtext {
+    font-size: 14px;
+}
+
+/* navbar css ends */
+
+
+/* theme button starts */
+.theme {
+    display: block;
+    position: absolute;
+}
+
+/* theme button ends */
+
+/* hero css starts */
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img {
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.hero .title {
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .herobtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero .herobtns .btn {
+    width: 200px;
+    padding: 15px 12px;
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--yellow);
+    margin: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: var(--darkShadowSm);
+    transition: all 200ms ease-in-out;
+}
+
+.hero .herobtns .btn:hover {
+    background-color: var(--darkShadowLg);
+    color: var(--yellow);
+    box-shadow: 2px 2px 10px var(--yellow);
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+/* hero css ends */
+
+
+
+.abtbtn {
+    display: block;
+    background-color: var(--yellowL);
+    color: var(--dark);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 5px;
+    text-align: center;
+    font-weight: 00;
+    width: 150px;
+}
+
+.title {
+    font-size: 82px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+}
+
+.about .aboutcontent {
+    margin-bottom: 20px;
+    font-size: 26px;
+    width: 80%;
+    line-height: 50px;
+
+}
+
+.aboutcontent a {
+    color: var(--blue);
+}
+
+/* about section ends */
+
+/* skills section starts */
+.skills {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skills.section {
+    width: 100%;
+    margin-left: 12vh;
+    padding: 50px 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.skills .cardrow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+}
+
+.skills .cardrow .card {
+    width: 250px;
+    height: 250px;
+    box-shadow: var(--darkshadowsm);
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 10px;
+    padding: 50px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skills .cardrow .card .material-icons {
+    font-size: 60px;
+}
+
+.skills .cardrow .card .cardcontentLg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow);
+    color: var(--dark);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px;
+    border-radius: 8px;
+    transform: translateY(100%);
+    transition: all 350ms ease-in-out;
+
+}
+
+.skills .cardrow .card:hover .cardcontentLg {
+    transform: translateY(0%);
+}
+
+.skills .cardrow .card .cardcontentSm {
+    display: none;
+}
+
+/* skills section ends */
+
+
+
+/* project section satrts */
+.projects .cardrow {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -20px;
+}
+
+.projects .cardrow .card {
+    width: 40%;
+    margin: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+.projects .cardrow .card img {
+    width: 100%;
+    box-shadow: var(--darkshadowlg);
+}
+
+.projects .cardrow .card:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 25px #ffffff15
+}
+
+
+/* project section ends */
+
+/* contact section */
+.iconrow {
+    width: 100%;
+    display: flex;
+}
+
+.contact .iconrow .icon {
+    margin-left: 50px;
+    font-size: 50px;
+    align-content: flex-start;
+}
+
+.contact .iconrow .icon:hover {
+    color: var(--yellow);
+}
+
+/* responsive */
+@media screen and (max-width:700px) {
+
+    /* global */
+    .title {
+
+        font-size: 60px;
+    }
+
+    .space {
+        width: 100%;
+        height: 10vh;
+    }
+
+    .img {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .hero .myimg {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .herobtns {
+
+        flex-direction: column;
+    }
+
+    .hero .btn {
+        font-size: 15px !important;
+    }
+
+    .hero .title {
+        font-size: 24px;
+    }
+
+    .navbar {
+        z-index: 1;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .navtheme {
+        display: none;
+    }
+
+    .navbar .navlinks {
+        width: 100%;
+    }
+
+    .navbar .navlinks ul {
+        display: flex;
+        width: 100%;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    .theme2 {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        display: block;
+    }
+
+    .theme2:hover {
+        color: var(--yellow);
+        cursor: pointer;
+    }
+
+    .about {
+        margin-left: 0px;
+        padding: 50px 30px;
+    }
+
+    .about .aboutcontent {
+        margin-top: 20px;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* skills started */
+    .skills.section {
+        margin-left: 0;
+        padding-left: 0;
+        align-items: flex-start;
+    }
+
+    .skills .cardcontentLg {
+        display: none;
+    }
+
+    .skills .cardrow .card .cardcontentSm {
+        display: block;
+        position: absolute;
+        margin-left: 50px;
+        left: 85%;
+        width: 100%;
+        height: 95%;
+        background-color: var(--yellow);
+        border-radius: 8px;
+        color: var(--dark);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 15px;
+
+    }
+
+    .skills .cardrow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills .cardrow .card {
+        align-items: flex-start;
+        width: 100px;
+        height: 100px;
+        padding: 25px;
+        overflow: visible;
+    }
+
+    .skills .cardrow .card .cardicon .material-icons {
+        font-size: 40px;
+    }
+
+
+    /* skills end */
+    .section {
+        margin-left: 0px;
+        padding-left: 5px;
+    }
+
+    .projects.section .cardrow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* projects starts */
+
+    .space {
+        display: none;
+    }
+
+    /* projects ends */
+}

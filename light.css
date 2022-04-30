@@ -1,0 +1,131 @@
+:root {
+    --red: red;
+    --dark: #011627;
+    --yellow: #f0c808;
+    --light: #f6f6f6;
+    --blue1: #bfcde0;
+    --yellowL: #e5bf07;
+    --redL: #c90f0d;
+    --blue: #6cabff;
+    --darkblue: #3174d0;
+    --fFamily: 'Poppins', sans-serif;
+    --darkshadowsm: 4px 4px 15px rgba(0, 0, 0, 0.158);
+    --darkshadowlg: 2px 2px 10px rgba(24, 12, 12, 0.158);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: var(--fFamily);
+}
+
+body.dark {
+    background-color: var(--light);
+    color: var(--dark);
+    overflow-x: hidden;
+}
+
+body.dark a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+body.dark .navbar .navtheme:hover {
+    transform: scale(1.1);
+    color: var(--yellow);
+}
+/* body.dark .material-icons{
+    color: var(--dark);
+}
+body.dark .navtext{
+    color: var(--dark);
+} */
+
+body.dark .navbar .navlinks .navlink{
+    color: var(--dark);
+}
+
+
+body.dark .navbar .navlinks .navlink:hover {
+    color: var(--yellow);
+}
+
+
+body.dark .hero .herobtns .btn {
+    width: 200px;
+    padding: 15px 12px;
+    text-align: center;
+    color: var(--dark);
+    background-color: var(--yellow);
+    margin: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: var(--darkShadowSm);
+    transition: all 200ms ease-in-out;
+}
+
+body.dark .hero .herobtns .btn:hover {
+    background-color: var(--darkShadowLg);
+    color: var(--yellow);
+    box-shadow: 2px 2px 10px var(--yellow);
+    transform: scale(1.1) !important;
+    cursor: pointer;
+}
+
+/* hero css ends */
+
+
+
+body.dark .abtbtn {
+    display: block;
+    background-color: var(--yellowL);
+    color: var(--dark);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 15px 5px;
+    text-align: center;
+    font-weight: 00;
+    width: 150px;
+}
+
+body.dark .title {
+    font-size: 82px;
+    font-weight: 700;
+    color: var(--blue);
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+}
+
+
+body.dark .aboutcontent a {
+    color: var(--blue);
+}
+
+body.dark .contact .iconrow .icon {
+    color: var(--dark);
+}
+body.dark .contact .iconrow .icon:hover {
+    color: var(--yellow);
+}
+/* responsive */
+@media screen and (max-width:700px) {
+
+    body.dark .theme2:hover {
+        color: var(--yellow);
+        cursor: pointer;
+    }
+    body.dark .title {
+        font-size: 50px;
+    }
+
+    body.dark .skills .cardrow .card .cardcontentSm {
+        background-color: var(--yellow);
+        border-radius: 8px;
+        color: var(--dark);
+    }
+
+
+}
