@@ -79,7 +79,6 @@ scrollAbt.from('.about .title', {
 
 const scrollskills = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         trigger: '.about',
         start: '700px bottom',
         end: '-50px top',
@@ -100,7 +99,6 @@ const scrollskills = gsap.timeline({
 
 const scrollprojects = gsap.timeline({
     scrollTrigger: {
-        markers: true,
         trigger: '.projects',
         start: '0px bottom',
         end: '-50px top',
